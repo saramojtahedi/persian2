@@ -1,0 +1,724 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	direction: rtl;
+	background-color: #f5f5f5;
+}
+
+.header {
+	background-image: url('../img/berlin.jpg');
+	width: 100%;
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.header::before {
+	z-index: 1;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+	border-bottom: 2px solid #f5f5f5;
+	position: relative;
+	top: 80px;
+	z-index: 2;
+}
+
+.social {
+	z-index: 2;
+	position: relative;
+	top: 30px;
+}
+
+.social i {
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	color: #333;
+	margin-right: 25px;
+	cursor: pointer;
+	transition: all 0.5s;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 10px 5px;
+}
+
+.social i:hover {
+	color: #4df7c0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+	z-index: 2;
+}
+
+.logo span {
+	font-size: 36px;
+	font-family: fantasy;
+	letter-spacing: 1.5rem;
+	color: #e6e6e6;
+	text-transform: uppercase;
+	position: relative;
+	top: 30px;
+	/* animation-name: moj; */
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-iteration-count: 2;
+}
+
+@keyframes moj {
+	0 { top: 30px;}
+	25% { top: 15px;}
+	50% { top: 30px;}
+	75% { top: 45px;}
+	100% { top: 30px;}
+}
+
+nav {
+	position: relative;
+	top: 130px;
+	right: 30px;
+	z-index: 2;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+nav li {
+	font-size: 32px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	color: #e6e6e6;
+	margin-left: 50px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+nav li:hover {
+	color: #4df7c0;
+}
+
+.tour {
+	z-index: 3;
+}
+
+.tour button {
+	position: relative;
+	top: 260px;
+	right: 40%;
+	z-index: 3;
+	font-size: 32px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	padding: 8px 80px;
+	transition: all 0.5s;
+	display: block !important;
+}
+
+.tour button:hover {
+	color: #4df7c0;
+	background-color: #111;
+}
+
+.modal-content {
+	background-color: #e6e6e6;
+}
+
+.modal-header {
+	font-size: 28px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	padding: 8px 20px;
+	text-align: center;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.modal-body {
+	background-image: url('../img/car-5132131_1920.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+
+.modal-body span {
+	width: 100%;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: adobe arabic;
+	text-align: center;
+	margin-right: 22px;
+	position: relative;
+	top: 20px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.modal-body span:hover {
+	color: #4df7c0;
+}
+
+.modal-body p {
+	width: 100%;
+	padding: 30px 0px;
+	color: #fff;
+	font-size: 22px;
+	font-family: adobe arabic;
+	text-align: center;
+}
+
+.mod {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	top: -20px !important;
+	right: 0px !important;
+	font-size: 24px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	padding: 8px 10px;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 6px;
+	transition: all 0.5s;
+}
+
+.mod:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #4df7c0;
+}
+
+.mod1 {
+	display: inline-block;
+	width: 50%;
+	font-size: 33px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	padding: 8px 10px;
+	text-align: center;
+	color: #000;
+	border-radius: 6px;
+	margin-right: 25%;
+	transition: all 0.5s;
+	border: 1px solid #777;
+}
+
+.mod1:hover {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #4df7c0;
+}
+
+.suggest {
+	margin-top: 0px;
+	background-color: #e6e6e6;
+	padding: 90px 10px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.title h4 {
+	font-size: 43px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 30px;
+	margin-bottom: 20px;
+}
+
+.title img {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	position: relative;
+	top: -50px;
+}
+
+.tours {
+	height: 450px;
+	width: 24%;
+	margin-left: 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	background-color: #333;
+	padding: 20px;
+	border-radius: 6px !important;
+}
+
+.suggest img {
+	border-radius: 10px !important;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.suggest img:hover {
+	transform: scale(1.05);
+}
+
+
+.suggest h3 {
+	font-size: 30px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+.suggest p {
+	font-size: 22px;
+	font-family: adobe arabic;
+	text-align: center;
+	color: #fff;
+	padding: 2px;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+
+.suggest button {
+	font-size: 22px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	text-align: center;
+	padding: 8px 50px;
+	background-color: #111;
+	color: #fff;
+	border: none;
+	margin-right: 45px;
+	border-radius: 3px;
+	transition: all 0.4s;
+}
+
+.suggest button:hover {
+	background-color: #e6e6e6;
+	color: #111;
+}
+
+.tours2 {
+	height: 450px;
+	width: 24%;
+	margin-left: 10px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	background-color: #333;
+	padding: 20px;
+	border-radius: 6px !important;
+	position: relative;
+	left: 14.8%;
+}
+
+.allin {
+	background-color: #111 !important;
+}
+
+.all {
+	background-image: url('../img/caravansar.jpg');
+	background-position: 90% 90%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-attachment: fixed; */
+	background-attachment: local;
+
+	width: 50%;
+	height: 500px;
+	margin-top: 40px;
+	margin-bottom: 150px;
+	position: absolute;
+	left: 25%;
+}
+
+.matn {
+	width: 350px;
+	padding: 5px;
+	text-align: center;
+	position: relative;
+	top: -200px;
+	right: 100px;
+	opacity: 0;
+}
+
+.all p {
+	font-size: 30px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+.pit {
+	position: relative;
+	top: 90px;
+	right: 0px;
+}
+
+.all button {
+	font-size: 36px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 14px 150px;
+	position: relative;
+	right: 20%;
+	top: 0px;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	transition: all 0.4s;
+}
+
+.all button:hover {
+	border-radius: 3px 20px 3px 20px;
+	text-decoration: none;
+	color: #4df7c0;
+}
+
+.matn .hid {
+	font-size: 36px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 16px 80px;
+	position: relative;
+	right: -150%;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	transition: all 0.4s;
+}
+
+ .vijhe {
+	width: 100px;
+	height: 100px;
+	background-color: #ff5050;
+	position: absolute;
+	top: -50px;
+	right: 35px;
+	border-radius: 50%;
+	font-size: 23px;
+	padding: 35px 8px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	text-align: center;
+	animation-name: special;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes special {
+	0 { top: -50px;	right: 35px;}
+	50% { top: -30px;	right: 55px;}
+	100% { top: -50px;	right: 35px;}
+}
+
+.matn2 {
+	width: 50%;
+	padding: 25px 8px;
+	text-align: center;
+	position: relative;
+	top: 0px;
+	right: 30px;
+	opacity: 0;
+}
+
+.matn2 p {
+	font-size: 20px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+.matn2 .hid2 {
+	font-size: 26px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	text-align: center;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 6px 30px;
+	position: relative;
+	right: -120%;
+	margin-top: 30px;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	transition: all 0.4s;
+}
+
+
+.top {
+	position: relative;
+	top: 580px;
+}
+
+.products {
+	margin-top: 80px;
+	background-color: red;
+	height: 200px;
+	position: relative;
+	top: 600px;
+	background-color: #111;
+}
+
+.products .back {
+	background-image: url('../img/map.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	position: relative;
+	top: 5px;
+	border-radius: 5px;
+}
+
+.front {
+	height: 200px;
+	position: absolute;
+	right: 100px;
+	top: 30px;
+}
+
+.front span {
+	font-size: 32px;
+	font-family: adobe arabic;
+	color: #e6e6e6;
+	padding: 25px;
+}
+
+.front button {
+	position: relative;
+	top: 25px;
+	right: 12%;
+	z-index: 3;
+	font-size: 27px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	color: #000;
+	padding: 4px 30px;
+	background-color: #f5f5f5;
+	transition: all 0.5s;
+}
+
+.front button:hover {
+	color: #4df7c0;
+	background-color: #111;
+}
+
+.products2 {
+	margin-top: 80px;
+	background-color: red;
+	height: 200px;
+	position: relative;
+	top: 700px;
+	background-color: #111;
+}
+
+.products2 .back2 {
+	background-image: url('../img/fireworks.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+	position: absolute;
+	top: 5px;
+	right: 100px;
+	border-radius: 5px;
+}
+
+.front2 {
+	height: 200px;
+	position: absolute;
+	left: 10px;
+	top: 30px;
+}
+
+.front2 span {
+	font-size: 32px;
+	font-family: adobe arabic;
+	color: #e6e6e6;
+	padding: 5px;
+}
+
+.front2 button {
+	position: relative;
+	top: 25px;
+	right: 19%;
+	z-index: 3;
+	font-size: 27px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	color: #000;
+	padding: 4px 30px;
+	background-color: #f5f5f5;
+	transition: all 0.5s;
+}
+
+.front2 button:hover {
+	color: #4df7c0;
+	background-color: #111;
+}
+
+footer {
+	background-color: #e6e6e6;
+	position: relative;
+	top: 850px;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #111;
+	border-radius: 25px 25px 0 0;
+}
+
+footer h3 {
+	font-size: 35px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 30px;
+	margin-right: -15px;
+	border-bottom: 1px solid #111;
+	width: 140px;
+	padding: 0 0 10px 0;
+	transition: all 0.4s;
+}
+
+footer h3:hover {
+	width: 200px;
+}
+
+footer .ul {
+	padding: 0px 80px;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer li {
+	font-size: 27px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+footer li:hover {
+	color: #333;
+}
+
+footer .ol {
+	padding: 0px 80px;
+}
+
+.ol h4 {
+	font-size: 27px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	color: #000;
+	margin-top: 6px;
+}
+
+footer h6 {
+	font-size: 26px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	color: #000;
+	position: relative;
+	top: -37px;
+	right: 75px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+footer h6:hover {
+	color: #333;
+}
+
+.footer {
+	position: relative;
+	top: 850px;
+	height: 60px;
+	background-color: #000;
+	font-size: 26px;
+	font-family: adobe arabic;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+
+	body {	overflow-x: hidden;	}
+	.logo {		z-index: 2;	}
+	.logo span {	font-size: 26px;	top: 70px;	animation-iteration-count: 3;	}
+	@keyframes moj {
+		0 { top: 70px;}	25% { top: 55px;}	75% { top: 85px;}	100% { top: 70px;}	}
+	nav {	top: 170px;	right: 30px;	box-sizing: border-box;}
+	nav ul {	flex-direction: column;	margin-right: 140px;}
+	nav li {	margin-bottom: 10px;	}
+	.tour button {	top: 200px;	right: 20%;}
+	.modal-body {	height: 500px;}
+	.modal-body span {	font-size: 25px;	position: relative;	top: 5px;}
+	.modal-body p {	padding: 5px 0px;	font-size: 20px;}
+	.mod {	width: 60%;	top: -10px !important;	left: -30px !important;	font-size: 20px;	padding: 2px 0px;	margin-right: 70px;	margin-top: 10px;	}
+	.suggest {	padding: 50px 10px;}
+	.title h4 {	font-size: 35px;	margin: 0 20px;}
+	.title img {	top: -40px;}
+	.tours {	height: 400px;	width: 100%;	margin-left: 0px;	padding: 10px;}
+	.suggest img {	width: 40%;	height: 50%;}
+	.suggest h3 {	font-size: 40px;	position: relative;	top: -150px;	right: 90px;}
+	.suggest p {	font-size: 22px;	margin-bottom: 0px;	margin-top: 0px;	position: relative;	top: -50px;	}
+	.suggest button {	font-size: 22px;	padding: 8px 50px;	background-color: #111;	color: #fff;	border: none;	margin-right: 65px;	position: relative;	top: -30px;	right: 60px;	}
+	.tours2 {	width: 100%;	left: 0%;}
+	.all {	width: 80%;	left: 10%;}
+	.all button {	font-size: 26px;	padding: 14px 80px;	right: 20%;	top: 0px;	}
+	.products .back {	height: 60%;	width: 50%;}
+	.front {	height: 200px;	position: absolute;	right: 210px;	top: 30px;}
+	.front span {	font-size: 23px;	padding: 25px;}
+	.front button {	top: 25px;	right: 23%;	font-size: 23px;	padding: 4px 20px;	}
+	.products2 {	margin-top: 10px;}
+	.products2 .back2 {	height: 60%;	width: 50%;	top: 5px;	right: 235px;}
+	.front2 {	width: 45%;	height: 200px;	left: 260px;	top: 30px;	text-align: center;	}
+	.front2 span {	font-size: 23px;	padding: 5px;}
+	.front2 button {	top: 25px;	right: -3%;	font-size: 23px;	padding: 4px 20px;	}
+	footer h3 {	font-size: 30px;}
+	footer .ul {	padding: 0px 40px;}
+	footer li {	font-size: 25px;}
+	footer .ol {	padding: 0px 40px;}
+	.ol h4 {	font-size: 24px;}
+	footer h6 {	font-size: 20px;	top: -33px;	right: 70px;}
+	.footer {	position: relative;	top: 850px;	height: 60px;	background-color: #000;	font-size: 26px;font-family: adobe arabic;	font-weight: bold;	color: #fff;	text-align: center;	padding: 10px 0;	}
+}
